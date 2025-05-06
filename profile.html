@@ -24,7 +24,181 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/costom.css" />
+<style>
+/* Footer Styles */
+.footer-area {
+    background-color: #222;
+    color: #fff;
+    position: relative;
+}
 
+.footer-top {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+.footer-widget-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer-widget-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #2c59f9;
+}
+
+.footer-about p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-social ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-social ul li {
+    margin-right: 15px;
+}
+
+.footer-social ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    background-color: #2c59f9;
+    color: #fff;
+}
+
+.footer-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-links li a {
+    color: #ccc;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-links li a i {
+    margin-right: 5px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #2c59f9;
+    padding-left: 5px;
+}
+
+.footer-links li a:hover i {
+    color: #2c59f9;
+}
+
+.footer-contact-info {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-contact-info li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer-contact-info li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    margin-right: 15px;
+    min-width: 30px;
+}
+
+.contact-icon i {
+    font-size: 18px;
+    color: #2c59f9;
+}
+
+.contact-text span {
+    display: block;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.contact-link {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #2c59f9;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .footer-widget-title {
+        margin-bottom: 20px;
+    }
+    
+    .footer-widget {
+        margin-bottom: 40px;
+    }
+    
+    .footer-top {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+}
+    </style>
 </head>
 
 <body>
@@ -110,76 +284,126 @@
     <!-- /End Items Grid Area -->
 
     <!-- Start Footer Area -->
-    <footer class="footer">
-        <!-- Start Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-1 col-md-3 col-3">
-
+    <footer class="footer-area">
+    <div class="container">
+        <!-- Footer Top -->
+        <div class="footer-top pt-70 pb-20">
+            <div class="row">
+                <!-- Logo and About Column -->
+                <div class="col-lg-4 col-md-6 col-12 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-logo mb-20">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="Rahayu Group" class="img-fluid" style="max-height: 60px;">
+                            </a>
+                        </div>
+                        <div class="footer-about">
+                            <p>Rahayu Group adalah perusahaan multi-bisnis yang bergerak di bidang konstruksi, event organizer, dan advertising dengan komitmen untuk memberikan layanan profesional dan berkualitas.</p>
+                        </div>
+                        <div class="footer-social mt-20">
+                            <ul>
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/warnaputihcreatif?igsh=N2txZWg3aTM1YW5t"><i class="lni lni-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-link">
-                            <h3>Layanan Kami</h3>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6 col-12">
-                                    <ul>
-                                        <li><a href="https://www.konstruksi.rahayugroup.com">PT. Konstruksi</a></li>
-                                        <li><a href="https://www.eo.rahayugroup.com">PT. Advertising</a></li>
-                                        <li><a href="https://www.eo.rahayugroup.com">PT. Event Organizer</a></li>
-                                    </ul>
+                </div>
+                
+                <!-- Our Services Column -->
+                <div class="col-lg-3 col-md-6 col-12 mb-30">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Layanan Kami</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="https://www.konstruksi.rahayugroup.com">
+                                    <i class="lni lni-chevron-right"></i> PT. Rahayu Konstruksi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.eo.rahayugroup.com">
+                                    <i class="lni lni-chevron-right"></i> PT. Rahayu Advertising
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.eo.rahayugroup.com">
+                                    <i class="lni lni-chevron-right"></i> PT. Rahayu Event Organizer
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-6 col-12 mb-30">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="./">
+                                    <i class="lni lni-chevron-right"></i> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./perusahaan">
+                                    <i class="lni lni-chevron-right"></i> Layanan Kami
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./profile">
+                                    <i class="lni lni-chevron-right"></i> Profil Perusahaan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#hubungi-kami">
+                                    <i class="lni lni-chevron-right"></i> Hubungi Kami
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Column -->
+                <div class="col-lg-3 col-md-6 col-12 mb-30">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Contact</h3>
+                        <ul class="footer-contact-info">
+                            <li>
+                                <div class="contact-icon">
+                                    <i class="lni lni-map-marker"></i>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-link">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="./">Home</a></li>
-                                <li><a href="./perusahaan">layanan Kami</a></li>
-                                <li><a href="./profil">Profile Perusahaan</a></li>
-                            </ul>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-contact">
-                            <h3>Contact</h3>
-                            <ul>
-                                <li>Cinere Residence<br> Meruyung, Limo, Depok</li>
-                                <li>Telepon.<a href="https://wa.me/62895343157218?text=Hi%2C%20Admin" target="_blank" class="wa"> +(62) 895-3431-57218</a> <br>Gmail. <a href="mailto:rahayuofficialid@gmail.com?subject=Hello%20Admin&body=Hi%2C%20I%20need%20assistance." class="wa">rahayuofficialid@gmail.com</a></li>
-                            </ul>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Footer Middle -->
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content">
-                                <ul class="footer-social">
-                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
-                                    <li><a href="https:www.instagram.com/warnaputihcreatif?igsh=N2txZWg3aTM1YW5t"><i class="lni lni-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                                <div class="contact-text">
+                                    <span>Cinere Residence<br> Meruyung, Limo, Depok</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <i class="lni lni-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Telepon:</span>
+                                    <a href="https://wa.me/62895343157218?text=Hi%2C%20Admin" target="_blank" class="contact-link">
+                                        +(62) 895-3431-57218
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <i class="lni lni-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Email:</span>
+                                    <a href="mailto:rahayuofficialid@gmail.com?subject=Hello%20Admin&body=Hi%2C%20I%20need%20assistance." class="contact-link">
+                                        rahayuofficialid@gmail.com
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>                                                               </div>
         <!-- End Footer Middle -->
     </footer>
     <!--/ End Footer Area -->
